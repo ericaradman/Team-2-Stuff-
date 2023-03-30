@@ -7,14 +7,6 @@ CovidConfMatRF = table(CovidConfMatRF)
 CovidConfMatRF
 
 
-FULLRFDATA = BinCombinedCovidData[,-c(2)]
-trainIndex <- createDataPartition(FULLRFDATA$covid_status, p = 0.6, list = FALSE)
-
-training_set <- FULLRFDATA[trainIndex, ]
-testing_set <- FULLRFDATA[-trainIndex, ]
-
-FullRF = randomForest(as.factor(covid_status) ~., data = training_set) 
-
 #Check feature importance 
 
 FeatImp = FullRF$importance
