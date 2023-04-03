@@ -15,6 +15,8 @@ Now that the most predictive features are selected and the data is scaled, the m
 
 Finally, the Figure.R script can be run to generate all of the figures that will be in the final poster. Figure1(first two figures printed combined): a boxplot comparison of non-scaled and scaled features. Figure2: a bar chart showing the distribution of feature importance across p-values. Figure3: the ROC plots for each model (AUC calculations and labels added manually on poster)(Blue = SVM, Red = RF, Green = NN, Yellow = KNN, Grey = NB). Figure4: the confusion matrices for each model. Figure5: is a bar chart showing the accuracy, specificity, and sensitivity of each model as well as that of current gold standard COVID tests (requires the accuracy.csv file). Figure6: a bar chart showing the importance of each feature in increasing order. 
 
+To run this in BASH, use use BashCovid.sh 
+
 Reference:
 
 Rao, A. M. et al. (2022) “A robust host-response-based signature distinguishes bacterial and viral infections across diverse global populations,” Cell reports. Medicine, 3(12), p. 100842. doi: 10.1016/j.xcrm.2022.100842.
